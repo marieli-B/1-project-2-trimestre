@@ -52,14 +52,14 @@
       </div>
 </body>
 <script>
-  const  botão:Document.querySelector("button");
+  const  botão:document.querySelector("button");
   botão.addEventLitener("click", botãoClicado);
 
 function botãoClicado{
 
 console.log("fui clicado")
-
-
+let texto = botão.querySelector("span")
+texto.textContent++;
 
 
 
