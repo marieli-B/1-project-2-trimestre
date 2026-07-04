@@ -48,12 +48,19 @@
     <h2>primeira vez que faço isso</h2>
     <p>Olá a todos que veem neste blog para aprender este tipo de conteúdo</p>
     </main>
-    <button>  ♥️ <span>0</span>  </button>
+    <button class="">  ♥️ <span>0</span>  </button>
+    <button>  👍 <span>0</span>  </button>
       </div>
 </body>
 <script>
-  const  botão:document.querySelector("button");
-  botão.addEventLitener("click", botãoClicado);
+  const  botões:document.querySelector("button");
+ 
+ 
+botões.array.forEach(function (botão) {
+
+ botão.addEventLitener("click", botãoClicado);
+
+
 
 function botãoClicado{
 
@@ -61,11 +68,14 @@ console.log("fui clicado")
 let texto = botão.querySelector("span")
 texto.textContent++;
 
+})};
 
 
 
 
-}
+
+
+
 
 
 </script>
