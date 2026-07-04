@@ -70,6 +70,10 @@ article{
 
 
   botões.array.forEach(function (botão) {
+    
+
+    let curtiu=false;
+
 
     botão.addEventLitener("click", botãoClicado);
 
@@ -79,8 +83,11 @@ article{
 
       console.log("fui clicado")
       let texto = botão.querySelector("span")
-      texto.textContent++;
-
+      if (curtiu === false){
+      texo.textContent++;
+      cuitiu=true;
+      }
+      
     }
 
   });
