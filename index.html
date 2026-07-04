@@ -1,48 +1,59 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
- </head>
 
- <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+</head>
+
+<body>
   <style>
-    header{
+    header {
       background-color: #7AFFFD;
       color: #000000;
       text-align: center;
-      max-width:700px;
-      margin:0 auto;
-      padding: 16px ;
-      border: 5 px solid 
-      color blueviolet;
-    }
-    main{
-      background-color: #000000;
-    text-align: left;
-      color: #7AFFFD;
-      max-width:900px;
-      margin:0 auto;
+      max-width: 700px;
+      margin: 0 auto;
       padding: 16px;
-      display: flex;
-    } img
+      border: 5 px solid color blueviolet;
+    }
 
-      width: 160px;
-      .artigo-autor{
+    main {
+      background-color: #000000;
+      text-align: left;
+      color: #7AFFFD;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+article{
+ display: flex;
+}
+    img width: 160px;
+
+    .artigo-autor {
       font-weight: bold;
-      
+
     }
   </style>
   <header>
-    
-    <h1>Blog educacional sobre neurodivergência</h1>
+
+  <h1>Blog educacional sobre neurodivergência</h1>
     <p>Irei introduzir conhecimentos para combater preconceitos e tentar informar para quem não sabe o que é isso</p>    
     <p>Por: Maria Elisa</p>
      </header> 
-  <main>
+  <article>
+ <img src="imagem1.png" alt="Ilustração colorida em estilo artístico mostrando o perfil de várias pessoas diversas. Dentro de suas mentes, há representações visuais de diferentes formas de pensar, como engrenagens, conexões neurais brilhantes, flores, árvores crescendo e balões de pensamento com ícones de música, livros e fotografia. As mentes estão interconectadas por feixes de luz, simbolizando a diversidade e a riqueza da neurodivergência. O fundo é suave e abstrato.">
+    <h2>primeira vez que faço isso</h2>
+    <p>Olá a todos que veem neste blog para aprender este tipo de conteúdo</p>
+    </main>
+    <button class="">  ♥️ <span>0</span>  </button>
+    <button>  👍 <span>0</span>  </button>
+ </div>
+</article>
+ <article>
+<main>
     <div>
      <img src="imagem1.png" alt="Ilustração colorida em estilo artístico mostrando o perfil de várias pessoas diversas. Dentro de suas mentes, há representações visuais de diferentes formas de pensar, como engrenagens, conexões neurais brilhantes, flores, árvores crescendo e balões de pensamento com ícones de música, livros e fotografia. As mentes estão interconectadas por feixes de luz, simbolizando a diversidade e a riqueza da neurodivergência. O fundo é suave e abstrato.">
     <h2>primeira vez que faço isso</h2>
@@ -50,25 +61,29 @@
     </main>
     <button class="">  ♥️ <span>0</span>  </button>
     <button>  👍 <span>0</span>  </button>
-      </div>
+ </div>
+</article>
+
 </body>
 <script>
-  const  botões:document.querySelector("button");
- 
- 
-botões.array.forEach(function (botão) {
-
- botão.addEventLitener("click", botãoClicado);
+  const botões: document.querySelector("button");
 
 
+  botões.array.forEach(function (botão) {
 
-function botãoClicado{
+    botão.addEventLitener("click", botãoClicado);
 
-console.log("fui clicado")
-let texto = botão.querySelector("span")
-texto.textContent++;
 
-})};
+
+    function botãoClicado{
+
+      console.log("fui clicado")
+      let texto = botão.querySelector("span")
+      texto.textContent++;
+
+    }
+
+  });
 
 
 
